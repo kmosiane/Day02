@@ -6,14 +6,14 @@
 /*   By: kmosiane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 10:54:48 by kmosiane          #+#    #+#             */
-/*   Updated: 2020/06/19 10:36:19 by kmosiane         ###   ########.fr       */
+/*   Updated: 2020/06/19 15:43:05 by kmosiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 void ft_putchar (char c)
 {
-	write (1, &c, 1);
+	write (1, &c, 2);
 }
 void ft_print_reverse_alphabet(void){
 
