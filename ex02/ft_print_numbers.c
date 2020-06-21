@@ -6,17 +6,20 @@
 /*   By: kmosiane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 10:57:12 by kmosiane          #+#    #+#             */
-/*   Updated: 2020/06/19 12:33:46 by kmosiane         ###   ########.fr       */
+/*   Updated: 2020/06/21 11:22:05 by kmosiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
-int main()
+void ft_putchar (char c)
+{
+	write (1, &c, 1);
+}
+void ft_print_numbers(void)
 {
 	int i = 0;
 	{	while(i <= 9);
-			putchar(i);
+			ft_putchar(i);
 				i++;
 		}
-		return 0;
 }
 
