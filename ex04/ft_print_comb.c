@@ -5,33 +5,49 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmosiane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/21 11:27:00 by kmosiane          #+#    #+#             */
-/*   Updated: 2020/06/21 13:49:13 by kmosiane         ###   ########.fr       */
+/*   Created: 2020/06/21 15:25:34 by kmosiane          #+#    #+#             */
+/*   Updated: 2020/06/21 15:28:28 by kmosiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-int ft_putchar (char c)
 
-void ft_print_comb(void)
+int 	ft_putchar(char c);
+
+void	print_char(char x, char y, char z)
+{
+	ft_putchar(x);
+	ft_putchar(y);
+	ft_putchar(z);
+}
+
+void	ft_print_comb(void)
 {
 	int a;
 	int b;
 	int c;
-	for(a = '0'; a <= '9'; ++a)
-	{
-		for(b = '0'; b <= '9'; ++ b)
+
+	a = '0';
+	while(a <= '9')
+	{	
+		b = a + 1;
+		while(b <= '9')
 		{
-			for(c = '0'; c <= '9'; ++c)
+c = b + 1;
+			while(c <= '9')
 			{
-				ft_putchar(a);
-				ft_putchar(b);
-				ft_putchar(c);
-				ft_putchar(',');
+				print_char(a, b, c);
+			 	if(a != '7' || b != '8' || c != '9')
+				{
+			 		ft_putchar(',');
+					ft_putchar(' ');
+				}
+				++c;
 			}
+			++b;
 		}
+		++a;
 	}
 }
-int main()
-{
+
 
