@@ -6,13 +6,11 @@
 /*   By: kmosiane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 15:25:34 by kmosiane          #+#    #+#             */
-/*   Updated: 2020/06/21 15:28:28 by kmosiane         ###   ########.fr       */
+/*   Updated: 2020/06/22 13:07:39 by kmosiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-int 	ft_putchar(char c);
 
 void	print_char(char x, char y, char z)
 {
